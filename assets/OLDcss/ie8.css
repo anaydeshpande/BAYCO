@@ -1,7 +1,7 @@
 /*
-	Solid State by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
@@ -15,6 +15,7 @@
 	h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 		border-bottom: solid 2px #ffffff;
 	}
+
 
 	blockquote {
 		border-left: solid 4px #ffffff;

@@ -3063,17 +3063,22 @@ li.dropdown {
 				border: 0;
 			}
 
+
+		/*CUSTOM NAV*/		
 		#header nav {
 			font-family: Raleway, Helvetica, sans-serif;
-			font-size: 0.8em;
+			font-size: 1em;
 			font-weight: 700;
 			height: 3em;
 			letter-spacing: 0.1em;
 			line-height: 3em;
-			position: absolute;
-/*			right: 0.7em;
-*/			left: 0.7em;
-			text-transform: uppercase;
+/*			position: absolute;
+*//*			right: 0.7em;
+*/			
+			margin-left: auto;
+    		margin-right: auto;
+/*			left: 0.7em;
+*/			text-transform: uppercase;
 			top: 0.7em;
 		}
 

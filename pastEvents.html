@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="res/chrome_logo.png"/>
+
+		<title>Past Events</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+
+		<style>
+		* {
+		box-sizing: border-box;
+		}
+
+		body {
+		background-color: #474e5d;
+		font-family: Helvetica, sans-serif;
+		}
+
+		/* The actual timeline (the vertical ruler) */
+		.timeline {
+		position: relative;
+		max-width: 1200px;
+		margin: 0 auto;
+		}
+
+		/* The actual timeline (the vertical ruler) */
+		.timeline::after {
+		content: '';
+		position: absolute;
+		width: 6px;
+		background-color: white;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		margin-left: -3px;
+		}
+
+		/* Container around content */
+		.container {
+		padding: 10px 40px;
+		position: relative;
+		background-color: inherit;
+		width: 50%;
+		}
+
+		/* The circles on the timeline */
+		.container::after {
+		content: '';
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		right: -17px;
+		background-color: white;
+		border: 4px solid #FF9F55;
+		top: 15px;
+		border-radius: 50%;
+		z-index: 1;
+		}
+
+		/* Place the container to the left */
+		.left {
+		left: 0;
+		}
+
+		/* Place the container to the right */
+		.right {
+		left: 50%;
+		}
+
+		/* Add arrows to the left container (pointing right) */
+		.left::before {
+		content: " ";
+		height: 0;
+		position: absolute;
+		top: 22px;
+		width: 0;
+		z-index: 1;
+		right: 30px;
+		border: medium solid white;
+		border-width: 10px 0 10px 10px;
+		border-color: transparent transparent transparent white;
+		}
+
+		/* Add arrows to the right container (pointing left) */
+		.right::before {
+		content: " ";
+		height: 0;
+		position: absolute;
+		top: 22px;
+		width: 0;
+		z-index: 1;
+		left: 30px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+		}
+
+		/* Fix the circle for containers on the right side */
+		.right::after {
+		left: -16px;
+		}
+
+		/* The actual content */
+		.content {
+		padding: 20px 30px;
+		background-color: black;
+		position: relative;
+		border-radius: 6px;
+		}
+
+		/* Media queries - Responsive timeline on screens less than 600px wide */
+		@media all and (max-width: 600px) {
+		/* Place the timelime to the left */
+		.timeline::after {
+		left: 31px;
+		}
+
+		/* Full-width containers */
+		.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+		}
+
+		/* Make sure that all arrows are pointing leftwards */
+		.container::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+		}
+
+		/* Make sure all circles are at the same spot */
+		.left::after, .right::after {
+		left: 15px;
+		}
+
+		/* Make all right containers behave like the left ones */
+		.right {
+		left: 0%;
+		}
+		}
+		</style>
+
+
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+	
+
+				<!-- Menu -->
+					<header id="header" style="text-align:center;">
+					<nav id="nav" style="text-align:center;">
+						<ul style="text-align:center;">
+							<li><a href="index.html">Home<span class="extra"></span></a></li>
+
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn">About</a>
+								<div class="dropdown-content">
+								  <a href="AboutUs.html">Officers</a>
+								  <a href="Advisers.html">Advisers</a>
+								</div>
+							</li>
+						
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn">Companies</a>
+								<div class="dropdown-content">
+								  <a href="currentPartners.html">Our Partnerships</a>
+								  <a href="Partnerships.html">Become A Partner</a>
+								</div>
+							</li>
+
+							<li><a href="Resources.html">Resources<span class="extra"></span></a></li>
+
+
+							<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn">Events</a>
+								<div class="dropdown-content">
+								  <a href="UpcomingEvents.html">Calendar</a>
+								  <a href="RSVP.html">Student RSVP</a>
+  								  <a href="pastEvents.html">View Past Events</a>
+
+								</div>
+							</li>
+							<li><a href="Photos.html">Photos<span class="extra"></span></a></li>
+						</ul>
+					</nav>
+					</header>
+
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Here is a timeline of the events we've done</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+
+
+				<div class="timeline">
+				  <div class="container left">
+				    <div class="content">
+				      <h2>Job Fair: 3/22/17</h2>
+				      <p>Our first high-school job fair took place on March 22, 2017 from 4:00-6:00 PM at Homestead High Schools’ cafeteria and hosted businesses like DACA, Wag Hotels, and Great America’s Kaman’s Art. We were incredibly successful, experiencing a total attendance of over 300 students, parents, and other members of the school district.</p>
+				    </div>
+				  </div>
+				  <div class="container right">
+				    <div class="content">
+				      <h2>Resume Workshop: 4/19/17</h2>
+				      <p>We hosted a workshop at Lynbrook High School called Resumes that Impress. Mr. Tandun presented about how to improve and start a resume. The workshop was held at the Lynbrook High School auditorium and it was in partnership with Lynbrook BUILD and the Lynbrook College and Career Center.</p>
+				    </div>
+				  </div>
+				  <div class="container left">
+				    <div class="content">
+				      <h2>Resume Workshop: 10/14/17</h2>
+				      <p>BAYCO will hosted a resume workshop on October 14th from 3:00-4:00 PM in Portable 2 at Fremont High School. It was a great opportunity for high schoolers to obtain insider tips on creating a professional resume and have professionals from LinkedIn and Fenwick & West review your resume</p>
+				    </div>
+				  </div>
+		<!-- 		  <div class="container right">
+				    <div class="content">
+				      <h2>10/14/17</h2>
+				      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+				    </div>
+				  </div> -->
+
+				    <div class="container right">
+				    <div class="content">
+				      <h2>Interview Workshop: 10/27/17</h2>
+				      <p>BAYCO hosted a mock interview workshop on October 27th from 4:00-6:00 PM in Homestead High School's cafeteria. About 20 employees from Apple performed mock college and job interviews with groups of students.</p>
+				    </div>
+				  </div>
+
+				  <div class="container left">
+				    <div class="content">
+				      <h2>Resume Workshop: 2/24/18</h2>
+				      <p>A Resume Reviewing Workshop took place at Cupertino Excel on Saturday, February 24, 2018 from 2:00-4:00 PM. The location was provided to us by the Student Internship Network (https://www.thesin.org/), a sub-organization of Excel Test Prep. This workshop gave the opportunity for students to listen to professionals on how to start their resumes and provided feedback on their resumes!</p>
+				    </div>
+				  </div>
+				  <div class="container right">
+				    <div class="content">
+				      <h2>More Events Planned Soon!</h2>
+				      <p>Stay Tuned.....</p>
+				    </div>
+				  </div>
+				</div>
+
+
+			</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<p>Got a great idea for ways we can improve? Have a question about the services we offer? Want to join the team? Drop a line below and we'll get back to you as soon as possible</p>
+							<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyxoi5R7lR61x0prG4gu0MCFpA72ijTjCR4QGMnw7EWj32exiky/exec">
+								<div class="field">
+									<label for="name">Name</label>
+									<input id="name" type="text" name="name" placeholder="Joe Smith" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="7" placeholder="Tell me what is on your mind"></textarea>
+								</div>
+
+								<button class="button-success pure-button button-xlarge">
+      							<i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+							</form>
+
+							<!-- Thankyou Message People See when they submit the form: -->
+ 							<div style="display:none;" id="thankyou_message">
+    							<h2><em>Thanks</em> for contacting us! Your message has been sent to our database! We will get back to you soon!</h2>
+  							</div>
+
+  							<!-- Submit the Form to Google Using "AJAX" -->
+ 							 <script data-cfasync="false" type="text/javascript"
+  								src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  								<!-- <script data-cfasync="false" type="text/javascript"
+  								src="/form-submission-handler.js"></script> -->
+								<!-- END -->
+  						
+							<ul class="contact">
+								<li class="fa-home">
+									BAYCO<br />
+									Silicon Valley Area<br />
+									California
+								</li>
+								<li class="fa-envelope"><a href="#">contact.bayco@gmail.com</a></li>
+								<li class="fa-facebook"><a href="https://www.facebook.com/BAYCO-1478842622193528/">facebook/BAYCO</a></li>
+								<li class="fa-instagram"><a href="https://www.instagram.com/baycareeropportunities/">instagram/BAYCO</a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Sreehari Ram Mohan. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

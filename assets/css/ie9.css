@@ -8,6 +8,7 @@
 
 	body {
 		background-color: #2e3141;
+		/* background-color: #ff6e6e ; */
 		background-image: url("../../images/bg.jpg");
 		background-size: cover;
 		background-attachment: fixed;
@@ -16,6 +17,7 @@
 
 		body:before {
 			background: rgba(46, 49, 65, 0.8);
+			/* background:#ff6e6e; */
 			content: '';
 			display: block;
 			height: 100%;

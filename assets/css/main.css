@@ -147,14 +147,6 @@ li.dropdown {
             outline: 0;
           }
 
-            #header nav ul li a:hover {
-              background-color: rgba(255, 255, 255, 0.15);
-            }
-
-            #header nav ul li a:active {
-              background-color: rgba(255, 255, 255, 0.3);
-            }
-
           #header nav ul li:first-child {
             margin-left: 0;
           }
@@ -180,51 +172,25 @@ li.dropdown {
 
     }
 
-    @media screen and (max-width: 736px) {
+    @media screen and (min-width: 737px) {
 
-      #header {
+      #hamburger {
         display: none;
       }
 
     }
 
+    @media screen and (max-width: 736px) {
 
+      #header {
+        display: none;
+      }
+      
+      #hamburger {
+        display: block;
+      }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 /* Reset */
 
